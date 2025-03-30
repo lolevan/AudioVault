@@ -3,6 +3,10 @@ uvicorn[standard]
 SQLAlchemy[asyncio]
 asyncpg
 pydantic
+email-validator
 python-jose[cryptography]
 httpx
 aiofiles
+pydantic-settings
+python-multipart
+

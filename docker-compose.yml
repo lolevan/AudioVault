@@ -7,10 +7,8 @@ services:
       - db
     environment:
       - DATABASE_URL=postgresql+asyncpg://postgres:postgres@db:5432/postgres
-      - YANDEX_CLIENT_ID=your_yandex_client_id
-      - YANDEX_CLIENT_SECRET=your_yandex_client_secret
-      - SECRET_KEY=your_secret_key
-      - ACCESS_TOKEN_EXPIRE_MINUTES=30
+    env_file:
+      - .env
 
   db:
     image: postgres:16
@@ -20,7 +18,7 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: postgres
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
