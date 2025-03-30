@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+SQLAlchemy[asyncio]
+asyncpg
+pydantic
+python-jose[cryptography]
+httpx
+aiofiles
