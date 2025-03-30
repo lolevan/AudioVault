@@ -50,9 +50,9 @@ project/
 
 ## Настройка переменных окружения
 
-Для безопасного хранения ключей и настроек используется файл `.env`. Создайте файл `.env` в корне проекта на основе шаблона `.env.example`:
+Для безопасного хранения ключей и настроек используется файл `.env`:
 
-**.env.example**
+**.env**
 
 ```env
 YANDEX_CLIENT_ID=your_yandex_client_id
@@ -62,13 +62,6 @@ ACCESS_TOKEN_EXPIRE_MINUTES=30
 DATABASE_URL=postgresql+asyncpg://postgres:postgres@db:5432/postgres
 ```
 
-**Важно:**  
-- Добавьте файл `.env` в `.gitignore`, чтобы ключи не попали в репозиторий:
-
-```gitignore
-# .gitignore
-.env
-```
 
 ## Установка и запуск
 
